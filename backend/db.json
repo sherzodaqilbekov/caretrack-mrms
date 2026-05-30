@@ -1,0 +1,181 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fullName": "Sherzod Akilbekov",
+      "email": "admin@caretrack.uz",
+      "password": "$2b$10$d1WLSb2Qp08EDgnCZrzSzO0ZTIAsJXtTY.B9bau69k3.ein/JOoJ.",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "fullName": "Dilshod Karimov",
+      "email": "klinik@caretrack.uz",
+      "password": "$2b$10$9l5.cxTtcsFUuPV46evhW.iyQd7Sa05MNJ9tlBBMmjCKUPSUbEXX2",
+      "role": "clinician"
+    },
+    {
+      "id": 3,
+      "fullName": "Mohira Yusupova",
+      "email": "qabul@caretrack.uz",
+      "password": "$2b$10$h7I.STFSrQqNbGSOvBfOQOtXIT63nX99maeeSfHLdLlSznWMVyirG",
+      "role": "receptionist"
+    },
+    {
+      "id": 4,
+      "fullName": "Sardor Nazarov",
+      "email": "klinik2@caretrack.uz",
+      "password": "$2b$10$b0ISbSwZfZYcUXQsD2aqqesINYFpqlUNg.iiQXzoWHdjL8d.nxDH.",
+      "role": "clinician"
+    },
+    {
+      "id": 5,
+      "fullName": "Feruza Toshmatova",
+      "email": "qabul2@caretrack.uz",
+      "password": "$2b$10$8sCLLXkCoc2KwzWm4OHdXuPkYHqWTzPUoO0pf/vZzjvNxKFVmJUFK",
+      "role": "receptionist"
+    },
+    {
+      "id": 6,
+      "fullName": "ali valiyev",
+      "email": "aqilbekovsherzod88@gmail.com",
+      "password": "$2b$10$ergKYhUysrKND3x/rxvEjuKlBHeoBJwA99yph11cJ2XBtY96477i.",
+      "role": "clinician"
+    }
+  ],
+  "doctors": [
+    {
+      "id": 1,
+      "fullName": "Dr. Aziz Karimov",
+      "specialty": "Kardiologiya",
+      "department": "Yurak bo'limi",
+      "email": "aziz@caretrack.uz",
+      "phone": "+998901112233"
+    },
+    {
+      "id": 2,
+      "fullName": "Dr. Nilufar Yo'ldosheva",
+      "specialty": "Nevrologiya",
+      "department": "Asab bo'limi",
+      "email": "nilufar@caretrack.uz",
+      "phone": "+998901112244"
+    },
+    {
+      "id": 3,
+      "fullName": "Dr. Sanjar Shodiyev",
+      "specialty": "Stomatolog",
+      "department": "Stomatologiya",
+      "email": "sanjar@gmail.com",
+      "phone": "+998507294848"
+    },
+    {
+      "id": 4,
+      "fullName": "Dr. Zokirov Zokir",
+      "specialty": "Kardiolog",
+      "department": "Kardiologiya",
+      "email": "kardiolog@gmail.com",
+      "phone": "+998935550001"
+    },
+    {
+      "id": 5,
+      "fullName": "Dr. Asad Akmalov",
+      "specialty": "Xirurg",
+      "department": "Xirurgiya",
+      "email": "asad@gmail.com",
+      "phone": "+998995556677"
+    },
+    {
+      "id": 6,
+      "fullName": "Dr. Dilfuza Nosirova",
+      "specialty": "Nevrolog",
+      "department": "Nevrologiya",
+      "email": "dilfuza@gmail.com",
+      "phone": "+998906753425"
+    }
+  ],
+  "patients": [
+    {
+      "id": 1,
+      "fullName": "Aziz Yo'ldoshev",
+      "dateOfBirth": "1990-05-12",
+      "gender": "Erkak",
+      "address": "Toshkent",
+      "phone": "+998935550001",
+      "doctorId": 1
+    },
+    {
+      "id": 2,
+      "fullName": "Shaxboz Sattorov",
+      "dateOfBirth": "2007-11-02",
+      "gender": "Erkak",
+      "address": "FARG'ONA",
+      "phone": "+998507294848",
+      "doctorId": 1
+    },
+    {
+      "id": 3,
+      "fullName": "Alisher Botirov",
+      "dateOfBirth": "1999-10-02",
+      "gender": "Erkak",
+      "address": "FARG'ONA",
+      "phone": "+998935550001",
+      "doctorId": 6
+    },
+    {
+      "id": 4,
+      "fullName": "Malika Ravshanova",
+      "dateOfBirth": "1980-01-09",
+      "gender": "Ayol",
+      "address": "Toshkent",
+      "phone": "+998995556677",
+      "doctorId": 5
+    },
+    {
+      "id": 5,
+      "fullName": "Dilafruz Aliyeva",
+      "dateOfBirth": "2001-04-23",
+      "gender": "Ayol",
+      "address": "FARG'ONA",
+      "phone": "+998507294848",
+      "doctorId": 2
+    }
+  ],
+  "diagnoses": [
+    {
+      "id": 1,
+      "icdCode": "I10",
+      "diseaseName": "Gipertoniya (yuqori qon bosimi)",
+      "description": "Gipertoniya",
+      "severity": "moderate",
+      "patientId": 1,
+      "diagnosedDate": "2026-05-01"
+    },
+    {
+      "id": 2,
+      "icdCode": "K29",
+      "diseaseName": "Gastrit va duodenit",
+      "description": "Gastrit",
+      "severity": "mild",
+      "patientId": 1,
+      "diagnosedDate": "2026-05-18"
+    },
+    {
+      "id": 3,
+      "icdCode": "K11",
+      "diseaseName": "So‘lak bezlari kasalliklari",
+      "description": "So‘lak bezlari kasalliklari",
+      "severity": "mild",
+      "patientId": 1,
+      "diagnosedDate": "2026-02-02"
+    },
+    {
+      "id": 4,
+      "icdCode": "D12",
+      "diseaseName": "Chambar ichak, to‘g‘ri ichak, orqa chiqaruv teshigi [anus] va anal kanalning xavfsiz o‘smalari",
+      "description": "Chambar ichak, to‘g‘ri ichak, orqa chiqaruv teshigi [anus] va anal kanalning xavfsiz o‘smalari",
+      "severity": "moderate",
+      "patientId": 5,
+      "diagnosedDate": "2026-03-03"
+    }
+  ]
+}

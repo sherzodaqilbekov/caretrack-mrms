@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\NEXT NOUT\\\\OneDrive\\\\Документы\\\\caretrack-mrms\\\\backend\\\\database\")",
+      "Bash(Out-Null)",
+      "Bash(Write-Host \"done\")",
+      "Bash(node -e ' *)",
+      "Bash(node server.js)",
+      "Bash(curl -s -X POST http://localhost:3000/api/auth/login -H \"Content-Type: application/json\" -d \"{\\\\\"email\\\\\":\\\\\"klinik2@caretrack.uz\\\\\",\\\\\"password\\\\\":\\\\\"klinik2123\\\\\"}\")",
+      "Bash(curl -s -X POST http://localhost:3000/api/auth/login -H \"Content-Type: application/json\" -d '{\"email\":\"qabul2@caretrack.uz\",\"password\":\"qabul2123\"}')",
+      "PowerShell(Stop-Process -Id 11372 -Force -ErrorAction SilentlyContinue; Start-Sleep -Seconds 1; $proc = Start-Process -FilePath \"node\" -ArgumentList \"server.js\" -WorkingDirectory \"C:\\\\Users\\\\NEXT NOUT\\\\OneDrive\\\\Документы\\\\caretrack-mrms\\\\backend\" -PassThru -WindowStyle Hidden; Start-Sleep -Seconds 2; Write-Host \"Yangi server PID: $\\($proc.Id\\)\")"
+    ]
+  }
+}

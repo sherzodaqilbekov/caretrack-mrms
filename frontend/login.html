@@ -7,8 +7,21 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
   <style>
+    :root {
+      --ct-primary:   #2B4FD8;
+      --ct-secondary: #00BCD4;
+      --ct-accent:    #7B8FD4;
+      --ct-bg:        #B3EEF8;
+      --ct-dark:      #1A2FA8;
+      --bs-primary:         #2B4FD8;
+      --bs-primary-rgb:     43,79,216;
+      --bs-info:            #00BCD4;
+      --bs-info-rgb:        0,188,212;
+      --bs-link-color:      #2B4FD8;
+      --bs-link-color-rgb:  43,79,216;
+    }
     body {
-      background: linear-gradient(135deg, #1a6efd 0%, #0a4bbf 50%, #093a9e 100%);
+      background: linear-gradient(135deg, var(--ct-primary) 0%, var(--ct-dark) 50%, #111e6e 100%);
       min-height: 100vh;
       display: flex;
       align-items: center;
@@ -24,7 +37,7 @@
       overflow: hidden;
     }
     .login-header {
-      background: linear-gradient(135deg, #0d6efd, #0a58ca);
+      background: linear-gradient(135deg, var(--ct-primary), var(--ct-dark));
       padding: 2rem 2rem 1.5rem;
       text-align: center;
       color: #fff;
@@ -46,7 +59,7 @@
       border: 1.5px solid #dee2e6;
       transition: border-color .15s, box-shadow .15s;
     }
-    .form-control:focus { border-color: #0d6efd; box-shadow: 0 0 0 3px rgba(13,110,253,.15); }
+    .form-control:focus { border-color: var(--ct-primary); box-shadow: 0 0 0 3px rgba(43,79,216,.15); }
     .input-group-text {
       border-radius: 10px 0 0 10px;
       background: #f8f9fa;
@@ -62,9 +75,11 @@
       font-weight: 600;
       letter-spacing: .02em;
     }
+    .btn-primary { background-color: var(--ct-primary) !important; border-color: var(--ct-primary) !important; }
+    .btn-primary:hover { background-color: var(--ct-dark) !important; border-color: var(--ct-dark) !important; }
     .hint-box {
-      background: #f8f9ff;
-      border: 1px solid #d0deff;
+      background: #eef3ff;
+      border: 1px solid var(--ct-accent);
       border-radius: 10px;
       padding: .85rem 1rem;
     }
@@ -81,10 +96,11 @@
       justify-content: space-between;
       align-items: center;
       padding: .3rem 0;
-      border-bottom: 1px dashed #e3eaff;
+      border-bottom: 1px dashed var(--ct-accent);
       font-size: .82rem;
     }
     .hint-item:last-child { border-bottom: none; }
+    .badge.bg-primary { background-color: var(--ct-primary) !important; }
   </style>
 </head>
 <body>
